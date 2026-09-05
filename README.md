@@ -25,6 +25,7 @@ STEP 4:
 Testing and Deployment
 Test the application with various image types to ensure the captions are meaningful and diverse. Deploy the application on a public URL using Gradio’s hosting features or external platforms like Hugging Face Spaces.
 ### PROGRAM:
+```
 import os
 import io
 import IPython.display
@@ -80,6 +81,7 @@ demo = gr.Interface(fn=captioner,
                     examples=["robo.jpeg", "strawberry.jpg", "calculate.png"])
 
 demo.launch(share=True, server_port=int(os.environ['PORT1']))
+```
 ### OUTPUT:
 <img width="832" height="555" alt="image" src="https://github.com/user-attachments/assets/b86a38d8-5e53-46cf-b4b6-ddbfcc40574c" />
 
